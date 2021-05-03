@@ -1,0 +1,34 @@
+* Introduction
+Qint (Quasar internationalization) is a library (and app extension) to
+facilitate the i18n of Quasar apps.
+
+* Installation
+#+begin_src sh
+npm install @pyxo/qint
+# or
+yarn add @pyxo/qint
+#+end_src
+
+* Features
+- SSR support.
+- Supports different URL modes: prefix (example.com/en), subdomain
+  (en.example.com), host (example.co.uk), search-param (example.com?l=en), none
+  (example.com)
+- Supports the use of a language tag cookie.
+- Can make use of the user's client language preferences (e.g. browser
+  settings).
+- Support for =hreflang= link tags.
+- Language tags, Qint uses the term "language tag" to denote a language or a
+  locale, and recommends the use of [[https://www.w3.org/International/articles/language-tags][BCP 47]] language tags.
+
+* Documentation
+API docs: [[https://qint.pyxo.net/api][qint.pyxo.net/api]]
+
+* Source code
+Repository: [[https://github.com/pyxo-dev/qint][github.com/pyxo-dev/qint]]
+
+Contributions are welcome!
+
+* See also
+- [[https://github.com/pyxo-dev/wint][Wint]] Web apps int.
+- [[https://github.com/pyxo-dev/vint][Vint]] Vue int.
