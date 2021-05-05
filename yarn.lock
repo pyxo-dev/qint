@@ -1113,15 +1113,17 @@
   resolved "https://registry.yarnpkg.com/@positron/stack-trace/-/stack-trace-1.0.0.tgz#14fcc712a530038ef9be1ce6952315a839f466a8"
   integrity sha1-FPzHEqUwA475vhzmlSMVqDn0Zqg=
 
-"@pyxo/vint@^1.0.0-beta.1":
-  version "1.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@pyxo/vint/-/vint-1.0.0-beta.1.tgz#9fbfa17532e2bbc31bd91962d92ea62e2b9c777f"
-  integrity sha512-XmHUhMls20EHjHYl6gQ60OZqUCjLqg/mBx0anF+4sxbsZqJ4vrX7GPNFL80lon7x1rEhoRBykUaoE46J35WtNA==
+"@pyxo/vint@^1.0.0-beta.2":
+  version "1.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@pyxo/vint/-/vint-1.0.0-beta.2.tgz#ba9c9ad963b91e6ddeb2d7b3e0956839da8696a9"
+  integrity sha512-GH9DFwWVJfH9fJUXXSS2n1UHM/2j2qTnUAysrrO2u8W8Pvp3AYRQLKnHSnSMGodpEipHNpemEcwrpee0nWZBWA==
+  dependencies:
+    "@pyxo/wint" "^1.0.0-beta.5"
 
-"@pyxo/wint@^1.0.0-beta.4":
-  version "1.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@pyxo/wint/-/wint-1.0.0-beta.4.tgz#63db641b834ae55d4ca79905eacab095fc38052c"
-  integrity sha512-hQc6ixls5mLYJcGgjHJxkR8D8rZUyUm1z2D2ZLytS6C4amXPBkVB9VJ50ZmAmk4K3h3I3wW5lLHe4OlvTY8Azw==
+"@pyxo/wint@^1.0.0-beta.5":
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@pyxo/wint/-/wint-1.0.0-beta.5.tgz#0dbe4313c52bd1125fa362cde8912d24de0625bd"
+  integrity sha512-h6cErcY0Bj+7Uxj4nJxsQZ+LLbILxoFnFTq1yL+NctPNZcG8fdFSLnnylmE5mG5EFZHbi5jXwFewd4zvRsG8Fg==
   dependencies:
     cookie "^0.4.1"
     negotiator "^0.6.2"
