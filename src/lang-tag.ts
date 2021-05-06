@@ -12,8 +12,10 @@ import { setQLang } from '.'
 
 /**
  * Options for `setAppLangTag` function.
+ *
+ * @beta
  */
-interface SetAppLangTagOptions {
+export interface SetAppLangTagOptions {
   /** The language tag to set the app to. */
   langTag: string
   /** The vue-i18n composer or legacy instance. */
@@ -26,7 +28,7 @@ interface SetAppLangTagOptions {
   qLangIsoName?: string
   /** {@inheritDoc QintLangTagConf.quasarLang.custom} */
   customQLang?: boolean
-  /** {@inheritDoc @pyxo/wint#WintCookieConf} */
+  /** Cookie related configurations. */
   cookieConf?: WintCookieConf
   /** Used to avoid cross-request state pollution in ssr. */
   ssrContext?: QSsrContext | null

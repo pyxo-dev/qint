@@ -10,6 +10,9 @@ import type { QSsrContext } from '@quasar/app';
 import type { QuasarLanguage } from 'quasar';
 import type { Ref } from 'vue';
 import type { VintConf } from '@pyxo/vint';
+import type { VintI18n } from '@pyxo/vint';
+import type { VintImportVueI18nMsgFn } from '@pyxo/vint';
+import type { WintCookieConf } from '@pyxo/wint';
 import type { WintLangTagConf } from '@pyxo/wint';
 
 // @beta
@@ -41,6 +44,21 @@ export const qintMeta: Ref<MetaOptions>;
 // @beta
 export interface QintQuasarLangConf {
     importQLang: QintImportQLangFn;
+}
+
+// @beta
+export function setAppLangTag(options: SetAppLangTagOptions): Promise<string | undefined>;
+
+// @beta
+export interface SetAppLangTagOptions {
+    cookieConf?: WintCookieConf;
+    customQLang?: boolean;
+    i18n: VintI18n;
+    importQLang: QintImportQLangFn;
+    importVueI18nMsg: VintImportVueI18nMsgFn;
+    langTag: string;
+    qLangIsoName?: string;
+    ssrContext?: QSsrContext | null;
 }
 
 // @beta
