@@ -4,16 +4,29 @@
 
 ```ts
 
-import { InjectionKey } from 'vue';
 import type { MetaOptions } from 'quasar/dist/types/meta';
 import type { QSsrContext } from '@quasar/app';
 import type { QuasarLanguage } from 'quasar';
 import type { Ref } from 'vue';
+import type { Vint } from '@pyxo/vint';
 import type { VintConf } from '@pyxo/vint';
 import type { VintI18n } from '@pyxo/vint';
 import type { VintImportVueI18nMsgFn } from '@pyxo/vint';
 import type { WintCookieConf } from '@pyxo/wint';
 import type { WintLangTagConf } from '@pyxo/wint';
+
+// @beta
+export function createQint(conf: QintConf, ssrContext?: QSsrContext | null): Qint;
+
+// @beta
+export interface Qint extends Vint {
+    conf: QintConf;
+    getLangTag: Vint['getLangTag'];
+    meta: typeof qintMeta;
+    setAppLangTag: (options: Partial<SetAppLangTagOptions> & Pick<SetAppLangTagOptions, 'langTag'>) => ReturnType<typeof setAppLangTag>;
+    setQLang: (options: Partial<SetQLangOptions> & Pick<SetQLangOptions, 'langTag'>) => ReturnType<typeof setQLang>;
+    ssrContext?: QSsrContext | null;
+}
 
 // @beta
 export interface QintConf extends Omit<VintConf, 'langTagsConf'> {
@@ -72,12 +85,6 @@ export interface SetQLangOptions {
     langTag: string;
     ssrContext?: QSsrContext | null;
 }
-
-// @beta
-export const ssrContextInjKey: InjectionKey<QSsrContext>;
-
-// @beta
-export function useSsrContext(): QSsrContext | undefined;
 
 
 ```

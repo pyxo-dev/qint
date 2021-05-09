@@ -1,6 +1,6 @@
 {
   "name": "@pyxo/qint",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "Qint (Quasar Internationalization), a library to make your Quasar app i18n easier.",
   "publishConfig": {
     "access": "public"
