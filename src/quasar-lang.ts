@@ -21,7 +21,7 @@ export interface SetQLangOptions {
   isoName?: string
   /** {@inheritDoc QintLangTagConf.quasarLang.custom} */
   custom?: boolean
-  /** Used to avoid cross-request state pollution in ssr. */
+  /** Quasar ssr context. */
   ssrContext?: QSsrContext | null
 }
 

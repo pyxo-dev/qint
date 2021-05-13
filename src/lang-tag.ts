@@ -30,7 +30,7 @@ export interface SetAppLangTagOptions {
   customQLang?: boolean
   /** Cookie related configurations. */
   cookieConf?: WintCookieConf
-  /** Used to avoid cross-request state pollution in ssr. */
+  /** Quasar ssr context. */
   ssrContext?: QSsrContext | null
 }
 
@@ -104,8 +104,8 @@ export async function setAppLangTag(
 
     // If all goes well, set the language tag cookie.
     if (useCookie) {
-      const serverResponse = ssrContext?.res
-      setLangTagCookie({ langTag, cookieKey, cookieOptions, serverResponse })
+      const res = ssrContext?.res
+      setLangTagCookie({ langTag, cookieKey, cookieOptions, res })
     }
 
     // Return the language tag as a sign of operation success.

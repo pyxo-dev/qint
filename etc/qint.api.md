@@ -21,11 +21,9 @@ export function createQint(conf: QintConf, ssrContext?: QSsrContext | null): Qin
 // @beta
 export interface Qint extends Vint {
     conf: QintConf;
-    getLangTag: Vint['getLangTag'];
     meta: typeof qintMeta;
     setAppLangTag: (options: Partial<SetAppLangTagOptions> & Pick<SetAppLangTagOptions, 'langTag'>) => ReturnType<typeof setAppLangTag>;
     setQLang: (options: Partial<SetQLangOptions> & Pick<SetQLangOptions, 'langTag'>) => ReturnType<typeof setQLang>;
-    ssrContext?: QSsrContext | null;
 }
 
 // @beta
