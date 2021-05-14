@@ -1,6 +1,6 @@
 {
   "name": "@pyxo/qint",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "description": "Qint (Quasar Internationalization), a library to make your Quasar app i18n easier.",
   "publishConfig": {
     "access": "public"
@@ -47,6 +47,6 @@
     "vue-i18n": "^9.0.0"
   },
   "dependencies": {
-    "@pyxo/vint": "^1.0.0-beta.3"
+    "@pyxo/vint": "^1.0.0-beta.4"
   }
 }
