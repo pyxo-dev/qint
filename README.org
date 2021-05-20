@@ -4,9 +4,11 @@ Quasar apps. Qint extends [[https://github.com/pyxo-dev/vint][Vint]].
 
 * Installation
 #+begin_src sh
-npm install @pyxo/qint
-# or
+yarn add vue-i18n@next
 yarn add @pyxo/qint
+# or
+npm install vue-i18n@next
+npm install @pyxo/qint
 #+end_src
 
 For an easier way to get started, see the app extension [[https://github.com/pyxo-dev/quasar-app-extension-int][Int]].
