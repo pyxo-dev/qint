@@ -1,8 +1,12 @@
 * Introduction
-Qint (Quasar internationalization) is a library that facilitate the i18n of
+Qint (Quasar internationalization) is a library that facilitates the i18n of
 Quasar apps. Qint extends [[https://github.com/pyxo-dev/vint][Vint]].
 
 * Installation
+** Using the app extension
+The app extension [[https://github.com/pyxo-dev/quasar-app-extension-int][Int]] is the easiest way to install and get started.
+
+** Manual install
 #+begin_src sh
 yarn add vue-i18n@next
 yarn add @pyxo/qint
@@ -11,7 +15,11 @@ npm install vue-i18n@next
 npm install @pyxo/qint
 #+end_src
 
-For an easier way to get started, see the app extension [[https://github.com/pyxo-dev/quasar-app-extension-int][Int]].
+Add Wint/Vint/Qint packages to =quasar.conf.js > build > transpileDependencies=:
+#+begin_src diff
+-      // transpileDependencies: [],
++      transpileDependencies: [/@pyxo\/(w|v|q)int/],
+#+end_src
 
 * Features
 - SSR support.
